@@ -1,0 +1,47 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "knex migrate:latest --knexfile=db/knexfile.js",
+    "db:seed": "knex seed:run --knexfile=db/knexfile.js",
+    "db:rollback": "knex migrate:rollback --knexfile=db/knexfile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Facundo Chuburu",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "bcrypt": "*",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.2",
+    "casual": "^1.5.17",
+    "crypto": "^1.0.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.2",
+    "express-jsonschema": "^1.1.6",
+    "jwt-simple": "^0.5.5",
+    "knex": "^0.13.0",
+    "moment": "^2.23.0",
+    "mongoose": "^4.8.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "objection": "^0.8.9",
+    "pg": "^7.7.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.42.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
